@@ -1,29 +1,34 @@
+
+            
+
 <html>
-<body>
-    <h1>Java Script Arrays</h1>
-    <h2>Nested Java Script Objects and Arrays</h2>
-    <p id="demo"></p>
-    <script>
-        let x="";
-        const myobj={
-            name:"Hemanth",
-            age:18,
-            cars:[
-                {name:"Ford",models:["mustang","fiesta","focus"]},
-                {name:"BMW",models:["320","X3","X5"]},
-                {name:"Mahindra",models:["Thar","XUV 500","XUV 700"]}
-        ]
-        }
-        for(let i in myObj.cars){
-            x+="<h2>"+myObj.cars[i].name+"</h2>";
-                for(let j in myObj.cars[i].models){
-                    x+=myObj.cars[i].models[j]+"<br>";
+    <body>
+        <h1>Java Script Arrays</h1>
+        <h2>Nested Java Script Objects and Arrays</h2>
+        <p id="demo"></p>
+        <script>
+            let x=" ";
+            const myObj={
+                name:"Hemanth",
+                age:18,
+    
+    
+                cars:[
+                    {name:"Ford",models:["Fiesta","Focus","Mustang"]},
+                    {name:"BMW",models:["320","x3","x5"]},
+                    {name:"Fiat",models:["500","panda"]}
+            ]
+            }
+    
+    
+            for(let i in myObj.cars){
+                x +="<h2>"+myObj.cars[i].name +"</h2>";
+                for (let j in myObj.cars[i].models){
+                x +=myObj.cars[i].models[j] +"<br>";
                 }
             }
             document.getElementById("demo").innerHTML=x;
-            </script>
-            </body>
-            </html>
-                
-            
-
+        </script>
+        </body>
+        </html>
+    
